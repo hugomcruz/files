@@ -17,7 +17,7 @@ spec:
       containers:
         - name: mockoon-inventory
           image: mockoon/cli:latest
-          args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/inventory-mock.json"]
+          args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/mock-inventory.json"]
           ports:
             - containerPort: 3003
       restartPolicy: Always
