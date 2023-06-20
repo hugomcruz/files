@@ -31,23 +31,6 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true
-        },
-        {
-          "uuid": "0ed38c78-6000-439e-ae38-7f71bd79272f",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false
         }
       ],
       "enabled": true,
