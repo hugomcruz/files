@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mockoon-inventory
-  namespace: central
+  namespace: portugal
 spec:
   replicas: 1
   selector:
@@ -26,7 +26,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mockoon-inventory
-  namespace: central
+  namespace: portugal
 spec:
   ports:
     - protocol: TCP
@@ -40,14 +40,14 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: mockoon-inventory
-  namespace: central
+  namespace: portugal
 spec:
   tls:
   - hosts:
-    - mockoon.central.border.berzuk.com
+    - mockoon-inventory.portugal.border.berzuk.com
   ingressClassName: nginx
   rules:
-  - host: mockoon.central.border.berzuk.com
+  - host: mockoon-inventory.portugal.border.berzuk.com
     http:
         paths:
           - path: /
