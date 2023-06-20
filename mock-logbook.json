@@ -1,0 +1,78 @@
+{
+  "uuid": "91504467-2d17-4dfa-94f2-0405537a31c7",
+  "lastMigration": 27,
+  "name": "Mock Logbook",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3005,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "5e920b98-2fcf-4a2f-8c32-2438bd2bc237",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v1/site/in",
+      "responses": [
+        {
+          "uuid": "8a68ffd7-c0f8-4bb4-8fa3-3c04748e63a4",
+          "body": "{\n  \"requestId\": \"{{body 'GenericInfo.requestId'}}\",\n  \"OPSrequestId\": \"{{body 'OPSInfo.OPSrequestId'}}\",\n  \"message\": \"Success\",\n  \"AccessEvent\": [\n    {\n      \"access_event_id\": 12345\n    }\n  ],\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\": \"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "5e920b98-2fcf-4a2f-8c32-2438bd2bc237"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

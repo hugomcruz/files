@@ -1,7 +1,7 @@
 {
   "uuid": "bd935755-e002-4b5a-8674-c6fc4ce54506",
   "lastMigration": 27,
-  "name": "Inventory mock",
+  "name": "Mock Iventory",
   "endpointPrefix": "",
   "latency": 0,
   "port": 3003,

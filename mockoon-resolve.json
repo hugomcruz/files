@@ -1,7 +1,7 @@
 {
   "uuid": "cb39477c-724f-4c07-8ede-4bac518327e0",
   "lastMigration": 27,
-  "name": "Mockoon resolve",
+  "name": "Mock Resolve",
   "endpointPrefix": "",
   "latency": 0,
   "port": 3004,
@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "3b2d0b37-b1a8-4812-a146-7c7b6e85e3f3",
-          "body": "{\n  \"runbookName\": \"ALL.BlockCellsByVendorAndTechnology_vX_0\",\n  \"worksheetId\": \"77c2b860bf0e11ecbd5f00505687bd4d\",\n  \"processId\": \"77c5ecb0bf0e11ecbd5f00505687bd4d\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\":\"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n}",
+          "body": "{\n  \"runbookName\": \"ALL.BlockCellsByVendorAndTechnology_vX_0\",\n  \"worksheetId\": \"77c2b860bf0e11ecbd5f00505687bd4d\",\n  \"processId\": \"77c5ecb0bf0e11ecbd5f00505687bd4d\",\n  \"addOnEndpoint\": \"{{body 'Endpoint'}}\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\":\"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -42,7 +42,7 @@
         },
         {
           "uuid": "c14cc9bc-a463-4f4a-998b-1bdd60bd783b",
-          "body": "{}",
+          "body": " {\n  \"addOnEndpoint\": \"{{body 'Endpoint'}}\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\":\"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n}",
           "latency": 0,
           "statusCode": 401,
           "label": "",
