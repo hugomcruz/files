@@ -1,14 +1,9 @@
 ---
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: default
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mockoon-inventory
-  namespace: default
+  namespace: central
 spec:
   replicas: 1
   selector:
@@ -24,20 +19,20 @@ spec:
           image: mockoon/cli:latest
           args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/inventory-mock.json"]
           ports:
-            - containerPort: 3000
+            - containerPort: 3003
       restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: mockoon-inventory
-  namespace: default
+  namespace: central
 spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000
-  type: NodePort
+      targetPort: 3003
+  type: ClusterIP
   selector:
     app: mockoon-inventory
 ---
@@ -45,11 +40,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: mockoon-inventory
-  namespace: default
+  namespace: central
 spec:
+  tls:
+  - hosts:
+    - mockoon.central.border.berzuk.com
+  ingressClassName: nginx
   rules:
-    - host: mockoon.border.berzuk.com
-      http:
+  - host: mockoon.central.border.berzuk.com
+    http:
         paths:
           - path: /
             pathType: Prefix
