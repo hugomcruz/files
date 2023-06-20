@@ -1,0 +1,59 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mockoon-logbook
+  namespace: italy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mockoon-logbook
+  template:
+    metadata:
+      labels:
+        app: mockoon-logbook
+    spec:
+      containers:
+        - name: mockoon-logbook
+          image: mockoon/cli:latest
+          args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/mock-logbook.json"]
+          ports:
+            - containerPort: 3004
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mockoon-logbook
+  namespace: italy
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3005
+  type: ClusterIP
+  selector:
+    app: mockoon-logbook
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mockoon-logbook
+  namespace: italy
+spec:
+  tls:
+  - hosts:
+    - mockoon-logbook.italy.border.berzuk.com
+  ingressClassName: nginx
+  rules:
+  - host: mockoon-logbook.italy.border.berzuk.com
+    http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: mockoon-logbook
+                port:
+                  number: 80
