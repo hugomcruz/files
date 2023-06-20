@@ -1,0 +1,59 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mockoon-resolve
+  namespace: central
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mockoon-resolve
+  template:
+    metadata:
+      labels:
+        app: mockoon-resolve
+    spec:
+      containers:
+        - name: mockoon-resolve
+          image: mockoon/cli:latest
+          args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/mockoon-resolve.json"]
+          ports:
+            - containerPort: 3004
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mockoon-resolve
+  namespace: central
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3004
+  type: ClusterIP
+  selector:
+    app: mockoon-resolve
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mockoon-resolve
+  namespace: central
+spec:
+  tls:
+  - hosts:
+    - mockoon-resolve.central.border.berzuk.com
+  ingressClassName: nginx
+  rules:
+  - host: mockoon-resolve.central.border.berzuk.com
+    http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: mockoon-resolve
+                port:
+                  number: 80

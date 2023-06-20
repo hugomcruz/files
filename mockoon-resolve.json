@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "3b2d0b37-b1a8-4812-a146-7c7b6e85e3f3",
-          "body": "{\n  \"runbookName\": \"ALL.BlockCellsByVendorAndTechnology_vX_0\",\n  \"worksheetId\": \"77c2b860bf0e11ecbd5f00505687bd4d\",\n  \"processId\": \"77c5ecb0bf0e11ecbd5f00505687bd4d\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\":\"{{hostname}}\"\n}",
+          "body": "{\n  \"runbookName\": \"ALL.BlockCellsByVendorAndTechnology_vX_0\",\n  \"worksheetId\": \"77c2b860bf0e11ecbd5f00505687bd4d\",\n  \"processId\": \"77c5ecb0bf0e11ecbd5f00505687bd4d\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\":\"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
