@@ -17,7 +17,7 @@ spec:
       containers:
         - name: mockoon-callback-resolve
           image: mockoon/cli:latest
-          args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/mock-resolve.json"]
+          args: ["-d", "https://raw.githubusercontent.com/hugomcruz/files/main/mock-callback-resolve.json"]
           ports:
             - containerPort: 3003
       restartPolicy: Always
