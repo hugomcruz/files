@@ -26,11 +26,44 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJlcTcwVkZyY2ZBSkN5T2c5cjU4VkJMdjNZSjFXZm1FOCJ9.x7iE2pTqElj1ra9EmwAWSi3Mxl6iy_dKH9WiFAojtJY",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true
+        },
+        {
+          "uuid": "d5ffee11-45b6-4e8b-8681-114c43322171",
+          "body": "{\n  \"Status\":\"Unauthorized\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\":\"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJlcTcwVkZyY2ZBSkN5T2c5cjU4VkJMdjNZSjFXZm1FOCJ9.x7iE2pTqElj1ra9EmwAWSi3Mxl6iy_dKH9WiFAojtJY",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
         }
       ],
       "enabled": true,

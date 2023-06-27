@@ -26,11 +26,44 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Basic a29uZzprb25n",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true
+        },
+        {
+          "uuid": "088637cc-e448-48ea-80ea-06c6690201d1",
+          "body": "{\n  \"message\": \"Unauthorized\",\n  \"addOnIP\": \"{{ip}}\",\n  \"addOnHostname\": \"{{hostname}}\",\n  \"addOnApikey\": \"{{header 'apikey'}}\",\n  \"addOnAuthorization\": \"{{header 'Authorization'}}\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Basic a29uZzprb25n",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
         }
       ],
       "enabled": true,
