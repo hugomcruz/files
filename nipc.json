@@ -1,0 +1,191 @@
+{
+  "uuid": "867eceb0-59a4-41fd-b4fd-15e83a6b9a58",
+  "lastMigration": 28,
+  "name": "NIPC",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "fa20cbb5-7b9b-4437-9d69-1e903dcc75ab",
+      "type": "http",
+      "documentation": "Get NIPC Data",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "2028937a-e6bc-4bcc-b905-1572ba076356",
+          "body": "{\n  \"result\": \"success\",\n  \"records\": {\n    \"517524465\": {\n      \"nif\": 517524465,\n      \"seo_url\": \"bright-waves-lda\",\n      \"title\": \"Bright Waves - Lda\",\n      \"address\": \"Rua das Acácias, Nº 37 A, Praia da Tocha\",\n      \"pc4\": \"3060\",\n      \"pc3\": \"690\",\n      \"city\": \"Tocha\",\n      \"start_date\": \"2023-04-14\",\n      \"activity\": \"Prestação de serviços de consultoria para o desenvolvimento de negócios, gestão, tecnologias de informação, software, e para o desenvolvimento social e pessoal. Formação profissional. Formação, investigação científica, consultoria e supervisão em tecnologias de informação. Consultoria e gestão de recursos humanos, recrutamento e selecção. Comércio, importação, exportação e representação de materiais, acessórios, equipamentos, produtos de software e tecnologia. Organização e realização de palestras, feiras, eventos e workshops relacionados com a prestação de serviços de consultoria informática e de gestão. Compra, venda e permuta de bens imóveis e revenda dos adquiridos para esse fim. Arrendamento e exploração de bens imóveis próprios ou alheios. Alojamento local\",\n      \"status\": \"active\",\n      \"cae\": [\n        \"62020\",\n        \"62090\",\n        \"62030\",\n        \"62010\"\n      ],\n      \"contacts\": {\n        \"email\": null,\n        \"phone\": null,\n        \"website\": null,\n        \"fax\": null\n      },\n      \"structure\": {\n        \"nature\": \"LDA\",\n        \"capital\": \"10000.00\",\n        \"capital_currency\": \"EUR\"\n      },\n      \"geo\": {\n        \"region\": \"Coimbra\",\n        \"county\": \"Cantanhede\",\n        \"parish\": \"Tocha\"\n      },\n      \"place\": {\n        \"address\": \"Rua das Acácias, Nº 37 A, Praia da Tocha\",\n        \"pc4\": \"3060\",\n        \"pc3\": \"690\",\n        \"city\": \"Tocha\"\n      },\n      \"racius\": \"https://www.racius.com/bright-waves-lda/\"\n    }\n  },\n  \"nif_validation\": true,\n  \"is_nif\": true,\n  \"credits\": {\n    \"used\": \"free\",\n    \"left\": {\n      \"month\": 989,\n      \"day\": 89,\n      \"hour\": 6,\n      \"minute\": 0,\n      \"paid\": 0\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Valid Response 1",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "517524465",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "7079ead0-91ae-4b2b-bc28-e03e618471a7",
+          "body": "{\n  \"result\": \"success\",\n  \"records\": {\n    \"502457210\": {\n      \"nif\": 502457210,\n      \"seo_url\": \"quinta-das-lagrimas-sociedade-imobiliaria-e-de-construcao-s-a\",\n      \"title\": \"Quinta das Lágrimas - Sociedade Imobiliária e de Construção S.a\",\n      \"address\": \"Quinta das Lagrimas-Santa Clara\",\n      \"pc4\": \"3040\",\n      \"pc3\": \"092\",\n      \"city\": \"Coimbra\",\n      \"start_date\": null,\n      \"activity\": \"Urbanização de terrenos, construção, compra e venda de imóveis e a revenda dos adquiridos para esse fim, a exploração de actividades turísticas e hoteleiras, bem como actividades de restauração, recreativas, culturais, desportivas e comerciais conexas.\",\n      \"status\": \"active\",\n      \"cae\": \"55111\",\n      \"contacts\": {\n        \"email\": \"geral@quintadaslagrimas.pt\",\n        \"phone\": \"239802380\",\n        \"website\": \"www.quintadaslagrimas.pt\",\n        \"fax\": \"239441695\"\n      },\n      \"structure\": {\n        \"nature\": \"SA\",\n        \"capital\": \"1247500.00\",\n        \"capital_currency\": \"EUR\"\n      },\n      \"geo\": {\n        \"region\": \"Coimbra\",\n        \"county\": \"Coimbra\",\n        \"parish\": \"Castelo Viegas\"\n      },\n      \"place\": {\n        \"address\": \"Quinta das Lagrimas-Santa Clara\",\n        \"pc4\": \"3040\",\n        \"pc3\": \"092\",\n        \"city\": \"Coimbra\"\n      },\n      \"racius\": \"https://www.racius.com/quinta-das-lagrimas-sociedade-imobiliaria-e-de-construcao-s-a/\",\n      \"alias\": \"Quinta das Lagrimas, Soc. Imobiliária e de Construção, Sa\",\n      \"portugalio\": \"https://www.portugalio.com/quinta-das-lagrimas-soc-imobiliaria-e-de-construcao/\"\n    }\n  },\n  \"nif_validation\": true,\n  \"is_nif\": true,\n  \"credits\": {\n    \"used\": \"free\",\n    \"left\": {\n      \"month\": 992,\n      \"day\": 92,\n      \"hour\": 9,\n      \"minute\": 0,\n      \"paid\": 0\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Valid Response 2",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "502457210",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "7916246f-c9b5-411d-9698-ea22e18feb3a",
+          "body": "{\n  \"result\": \"error\",\n  \"message\": \"No records found\",\n  \"nif_validation\": true,\n  \"is_nif\": true,\n  \"credits\": {\n    \"used\": \"free\",\n    \"left\": {\n      \"month\": 984,\n      \"day\": 84,\n      \"hour\": 1,\n      \"minute\": 0,\n      \"paid\": 0\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "NIF does not exist",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "111111111",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "6311b770-7961-4b35-a4d9-b3b644482ebb",
+          "body": "{\n  \"result\": \"error\",\n  \"message\": \"Key not valid\",\n  \"nif_validation\": false,\n  \"is_nif\": true,\n  \"credits\": {\n    \"used\": \"free\",\n    \"left\": []\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Wrong NIF",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "000000000",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "4350e789-cb26-4a1c-8225-40accadb952a",
+          "body": "{\n  \"result\": \"error\",\n  \"message\": \"Limit per minute reached. Please, try again later or buy credits.\",\n  \"nif_validation\": false,\n  \"is_nif\": true,\n  \"credits\": {\n    \"used\": \"free\",\n    \"left\": {\n      \"month\": 987,\n      \"day\": 87,\n      \"hour\": 4,\n      \"minute\": 0,\n      \"paid\": 0\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Limit Exeeded",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "999999999",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "fa20cbb5-7b9b-4437-9d69-1e903dcc75ab"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
