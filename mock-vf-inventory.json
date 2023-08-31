@@ -1,0 +1,154 @@
+{
+  "uuid": "53130184-e688-4ffa-befc-a6e3253ca96a",
+  "lastMigration": 28,
+  "name": "mock-vf-inventory",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "690af3c9-5a73-4428-8a3f-f8393f28af61",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "Vodafone_northbound/services/OdiService",
+      "responses": [
+        {
+          "uuid": "6ffca832-5168-4a77-a8bf-ecc9bc053222",
+          "body": "<?xml version=\"1.0\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://webservices.vodafone.ericsson.it\">\n\t<soapenv:Header/>\n\t<soapenv:Body>\n\t\t<web:getPlaceResponse>\n\t\t\t<web:getPlaceReturn>\n\t\t\t\t\n\t\t\t\t<![CDATA[\n\n        \t<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n\t\n\t\t\t\t\t<params>\n\t\t\t\t\t<param>\n\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t<name>OpCo</name>\n\t\t\t\t\t\t\t<value>ES</value>\n\t\t\t\t\t\t</value>\n\t\t\t\t\t</param>\n\t\t\t\t\t<param>\n\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t<name>Entity</name>\n\t\t\t\t\t\t\t<value>Place</value>\n\t\t\t\t\t\t</value>\n\t\t\t\t\t</param>\n\t\t\t\t\t<param>\n\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t<name>Place</name>\n\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t<name>GeographicSite</name>\n\t\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>GeographicSiteID</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>GI_BIANYA.ES</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>objectRelationships</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>GeographicSiteID</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>GeographicSiteRoleName</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>OTHER OPERATOR</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>mainAttributes</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location Address</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>C.T.G.C .Vall de Bianya</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location ID</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>024629</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location City</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>VALL DE BIANYA</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location Description</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Cuando se accede al emplazamiento, hay que llamar a TRADIA 934069191 indicando la estación en Vall de Bianya, y también hay que avisar al momento de abandonar el emplazamiento.Situado en el CTGC de Bianya.RECOGIDA DE LLAVES EN ABERTIS ZONA FRANCA</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Contacts</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location Country</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>SPAIN</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location District</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Girona</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Floor</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Latitude</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>42.199631</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Longitude</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>2.447826</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Street Number</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location Type</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>OTHER OPERATOR</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Parent Site</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Postal Code</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>17813</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Access Restrictions</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Cuando se accede al emplazamiento, hay que llamar a TRADIA 934069191 indicando la estación en Vall de Bianya, y también hay que avisar al momento de abandonar el emplazamiento.Situado en el CTGC de Bianya.RECOGIDA DE LLAVES EN ABERTIS ZONA FRANCA</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Room</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location Name</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>GI_BIANYA.ES</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Location Region</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>22_ARA_CAT</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Status</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>In Service</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>custAttributes</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Local NI Name</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>GI_BIANYA</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Route Description</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Outdoor</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_VF Site Category</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Compartida (Ajena)</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_VF Site Priority</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>2</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Loc. Access - Admission Period</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>[Access Duration]: 1 HORA [Access schedule]: [Is 24H Access (0=No/1=Yes)]: 0</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Original Longitude</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>02-26-52.176E</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Original Latitude</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>42-11-58.674N</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Projection</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>ED50</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Location Priority</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>3</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site Information_Loc. Access - Contact Name</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>VODAFONE</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Sharing_Shared Site Foreign ID</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>151</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Sharing_Shared Site Foreign Name</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>151</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Sharing_Shared Type</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Full Share</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Power Information_Power and Autonomy Details</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>[Company Name]: [Power (kW)]:</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Sharing_Site Owner</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Cellnex</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t</value>\n\t\t\t\t\t</param>\n\t\t\t\t</params>\n         \n         \n         ]]>\n         \n         </web:getPlaceReturn>\n\t\t</web:getPlaceResponse>\n\t</soapenv:Body>\n</soapenv:Envelope>\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "getPlace",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "x-border-action",
+              "value": "getPlace",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "03f3462f-a205-46ea-b4a2-dfc3f1939e39",
+          "body": "<?xml version=\"1.0\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://webservices.vodafone.ericsson.it\">\n\t<soapenv:Header/>\n\t<soapenv:Body>\n\t\t<web:getPartyResponse>\n\t\t\t<web:getPartyReturn>\n\t\t\t\t\n\t\t\t\t<![CDATA[\n\t\t\t<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n\t\t\t<params>\n\t\t\t\t<param>\n\t\t\t\t\t<value>\n\t\t\t\t\t\t<name>OpCo</name>\n\t\t\t\t\t\t<value>PT</value>\n\t\t\t\t\t</value>\n\t\t\t\t</param>\n\t\t\t\t<param>\n\t\t\t\t\t<value>\n\t\t\t\t\t\t<name>Entity</name>\n\t\t\t\t\t\t<value>Party</value>\n\t\t\t\t\t</value>\n\t\t\t\t</param>\n\t\t\t\t<param>\n\t\t\t\t\t<value>\n\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t<name>Party</name>\n\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t<name>PartyID</name>\n\t\t\t\t\t\t\t\t\t\t\t<value>MEO.PT</value>\n\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t<name>objectRelationships</name>\n\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>PartyRoleName</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>OWNER</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t<name>mainAttributes</name>\n\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Street</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Local Name</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>MEO</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Billing Contacts</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>City</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Comments</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Country</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>PT</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>County</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>ID</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>MEO.PT</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Status</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Active</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Floor</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Street Number</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Postal Code</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Primary Phone No</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Room</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>State/Prov</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Technical Contacts</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Type</name>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>OWNER</value>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t\t<complexObject>\n\t\t\t\t\t\t\t\t\t\t<item>\n\t\t\t\t\t\t\t\t\t\t\t<name>custAttributes</name>\n\t\t\t\t\t\t\t\t\t\t\t<value>\n\t\t\t\t\t\t\t\t\t\t\t\t<complexObject/>\n\t\t\t\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t\t\t\t</value>\n\t\t\t\t\t\t\t</item>\n\t\t\t\t\t\t</complexObject>\n\t\t\t\t\t</value>\n\t\t\t\t</param>\n\t\t\t</params>\n\t\t\t\n\t\t\t\t]]>\n\t\t\t\n\t\t\t</web:getPartyReturn>\n\t\t</web:getPartyResponse>\n\t</soapenv:Body>\n</soapenv:Envelope>\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "getParty",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "x-border-action",
+              "value": "getParty",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "d94090be-5930-4207-9d89-1bc928cef726",
+          "body": "<?xml version=\"1.0\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://webservices.vodafone.ericsson.it\">\n\t<soapenv:Header/>\n\t<soapenv:Body>\n\t\t<web:getPhysicalResourceResponse>\n\t\t\t<web:getPhysicalResourceReturn>\n\t\t\t\t\n\t\t\t\t<![CDATA[\n \t\t\t\t<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n \t\t\t\t<params>\n \t\t\t\t\t<param>\n \t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t<name>OpCo</name>\n \t\t\t\t\t\t\t<value>IT</value>\n \t\t\t\t\t\t</value>\n \t\t\t\t\t</param>\n \t\t\t\t\t<param>\n \t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t<name>Entity</name>\n \t\t\t\t\t\t\t<value>PR</value>\n \t\t\t\t\t\t</value>\n \t\t\t\t\t</param>\n \t\t\t\t\t<param>\n \t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t<name>ManagedHardware</name>\n \t\t\t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t<name>SecureHolder</name>\n \t\t\t\t\t\t\t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>SecureHolderID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>4-Q8988.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>objectRelationships</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>SecureHolderID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>4-Q8988.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>PlaceID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>4RM01698_Carini Via de Spuches_SSI.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>PartyID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>DNOC_TX2LEV.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>PartyID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>MEDINOK RAN.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>PartyID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>DNOC_RADIO2LEV.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>PhysicalResourceRoleName</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>MICROWAVE</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>mainAttributes</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Admin Company</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Depreciation(years)</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Bar Code</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Comments</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>RTN905_2A_16E1_XP-23</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>ID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>4-Q8988.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Frame</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Model</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>NMS/EMS</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Purchase Price</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Serial Number</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Site</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>4RM01698_Carini Via de Spuches_SSI.IT</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Life Status</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>In Service</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Device ID</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value/>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Element Type</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>MICROWAVE</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Vendor</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>OTHER</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>custAttributes</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Rack Information_Node Alias</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>4-Q8988</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Rack Information_VF Priority</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Non_Critical_Site</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Rack Information_VF Category</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>TPR</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Number of Customer</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Number of Enterprise Customer</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Number of VIP Customer</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Affected CI</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Affected Client Number</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Supported Services</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Impact Information_Affects Strategic Customer</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>0</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Rack Information_ME Priority</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>2</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<name>Rack Information_Domain Filter Technology</name>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<value>Tx</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</value>\n \t\t\t\t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t\t\t\t</value>\n \t\t\t\t\t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t\t\t\t\t</complexObject>\n \t\t\t\t\t\t\t\t\t</value>\n \t\t\t\t\t\t\t\t</value>\n \t\t\t\t\t\t\t</item>\n \t\t\t\t\t\t</complexObject>\n \t\t\t\t\t</param>\n \t\t\t\t</params>\n\t\t\t\n \t\t\t]]>\n\t\t</web:getPhysicalResourceReturn>\n\t\t</web:getPhysicalResourceResponse>\n\t</soapenv:Body>\n</soapenv:Envelope>\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "getPhysicalResource",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "x-border-action",
+              "value": "getPhysicalResource",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "690af3c9-5a73-4428-8a3f-f8393f28af61"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
